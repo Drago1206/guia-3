@@ -1,15 +1,22 @@
 addEventListener("DOMContentLoaded",()=>{
-let gall=0,i=0
-gall=Number(prompt("Ingrese el numero de gallinas que desea saber su calidad : "))
-    while(i<=gall){
-        i++;
-    let pes=0,alt=0,n=0
-        pes=Number(prompt("Ingrese el peso de la gallina: "))
-        alt=Number(prompt("Ingrese la altura de la gallina: "))
-        n=Number(prompt("Ingrese le numero de huevos que pone: "))
-        let calidad=(pes*alt)/n
-        document.write(`- El precio por ventas del kilo de la gallina ${i} es de: ${calidad}<br>`)
-        document.write("-")
+let cont=0
+while (cont<=12){
+    let n1=0,n2=0
+    n1=Number(prompt("Ingrese el primer numero: "))
+    n2=Number(prompt("Ingrese el segundo numero: "))
+    let sum=0,rest=0,div=0,mult=0
+    sum=(n1+n2)
+    rest=(n1-n2)
+    mult=(n1*n2)
+    div=(n1/n2)
+    cont=cont+5
+    document.write(`El total de la suma es de: ${sum}<br>`)
+    document.write(`El total de la resta es de: ${rest}<br>`)
+    document.write(`El total de la division  es de: ${div}<br>`)
+    document.write(`El total de la multiplicacion es de: ${mult}<br>`)
+    document.write(`______________________<br>`)
+
+
 }
 })
 
