@@ -1,23 +1,19 @@
 addEventListener("DOMContentLoaded",()=>{
-let cont=0
-while (cont<=12){
-    let n1=0,n2=0
-    n1=Number(prompt("Ingrese el primer numero: "))
-    n2=Number(prompt("Ingrese el segundo numero: "))
-    let sum=0,rest=0,div=0,mult=0
-    sum=(n1+n2)
-    rest=(n1-n2)
-    mult=(n1*n2)
-    div=(n1/n2)
-    cont=cont+5
-    document.write(`El total de la suma es de: ${sum}<br>`)
-    document.write(`El total de la resta es de: ${rest}<br>`)
-    document.write(`El total de la division  es de: ${div}<br>`)
-    document.write(`El total de la multiplicacion es de: ${mult}<br>`)
-    document.write(`______________________<br>`)
 
-
-}
+    let estudiantes=0,acum=0
+    
+        while(estudiantes<5){
+            let nombre = (prompt(`Ingresa tu nombre y apellido: `))
+            let edad = Number(prompt(`Ingresa tu edad: `))
+            let nota = Number(prompt(`Ingresa tu nota: `))
+            
+            document.write(`Estudiante: ${nombre}  Nota: ${nota} <br>`)
+            estudiantes+=1
+            acum+=nota
+            let promedio=(acum/5)
+            document.write(`La nota promedio de los 5 estudiantes es: ${promedio}<br>`)
+            document.write(`_____________________________________________<br>`)
+        }
 })
 
 
