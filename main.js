@@ -1,20 +1,14 @@
 addEventListener("DOMContentLoaded",()=>{
-let est=0, i=0
-while(i<est){
-    ++i
-    let uni=0,nom=""
-    nom=prompt("Ingrese el nombre del estudiante: ")
-    uni=Number(prompt(`Ingrese una de las calificaciones de ${nom}`))
-    let nc=Number(prompt("Ingrese el numero de calificaciones que tiene el estudiante: "))
-    for(let i=0;i<nc;i++){
-        let calf=0
-        calf=Number(prompt(`Ingrese la ${i} calificacion: `))
-        let prom=(uni+calf)/i
-        document.write(`El promedio de ${nom} es de: ${prom}`)
-        if(prom<5){
-            document.write(`El estudiante tiene que nivelar ya que su promedio es de: ${prom}`)
-        }
-    }
+    let distancia = 0 
+    let tiempo = 0
+while (distancia < 10000){
+    tiempo += 1
+    let A = (800 * tiempo) + (20*tiempo**2)/2 
+    let M = (800 * tiempo) + (10*tiempo**2)/2
+    distancia = Math.sqrt(A**2 + M**2)
+    document.write(`Segundo: ${tiempo}<br>`)
+document.write(`Distancia: ${Math.round(distancia,2)}<br>`)
+document.write(`___________________________________ <br>`)
 }
     })
 
