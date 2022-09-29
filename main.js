@@ -1,19 +1,15 @@
 addEventListener("DOMContentLoaded",()=>{
+    let personas=0,mujeres=0
+    while (personas <= 42){ 
+        mujeres += 1
+        let hombres = mujeres + 7  
+        personas = mujeres + hombres  
+    document.write(`El total de personas: ${personas}<br> `)
+    document.write(`La  mujer : ${mujeres}<br>`)
+    document.write(`Hombres: ${hombres}<br>`)
+    document.write(`_______________________________ <br>`)
+    }
 
-    let estudiantes=0,acum=0
-    
-        while(estudiantes<5){
-            let nombre = (prompt(`Ingresa tu nombre y apellido: `))
-            let edad = Number(prompt(`Ingresa tu edad: `))
-            let nota = Number(prompt(`Ingresa tu nota: `))
-            
-            document.write(`Estudiante: ${nombre}  Nota: ${nota} <br>`)
-            estudiantes+=1
-            acum+=nota
-            let promedio=(acum/5)
-            document.write(`La nota promedio de los 5 estudiantes es: ${promedio}<br>`)
-            document.write(`_____________________________________________<br>`)
-        }
 })
 
 
