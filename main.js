@@ -1,37 +1,32 @@
-// #Se está realizando un estudio del tráfico en una de las calles de su ciudad. Para ello deberá controlar
-// #durante un cierto tiempo los vehículos que pasan por dicha calle.
-// #Los distintos tipos de vehículo será: Turismo, Autobús, Camión o Motocicleta. Además, si el tipo de
-// #vehículo es Turismo debe anotar el número de ocupantes.
-// #El programa deberá contar 200 vehículos, e ir guardando cuantos pasan de cada tipo.
-// #Finalmente mostrará el porcentaje de cada uno de los tipos.
+//  #El Depto. de Seguridad Pública y Transito de desea saber de los n autos que entran a la ciudad de
+// // #Bogotá, cuantos entran con calcomanía de cada color. Conociendo el último dígito de la placa de
+// // #cada automóvil se puede determinar el color de la calcomanía utilizando 
 
 addEventListener("DOMContentLoaded",()=>{
-let i=0,M=0,CA=0,C=0,A=0,T=0
-while(i>=2){
+let A=0,ros=0,roj=0,verd=0,az=0,N=0
+N=Number(prompt("Ingrese el numero de autos: "))
+let i=0
+while(i<=N){
     i++
-let selec=Number(prompt(`Ingrese el peso del vehiculo: `))
-    if(selec<=250){
-        M+=1
-        let porcentm=((M/M)*100)
-        document.write(`El porcentaje total de motos es de: ${porcentm}`)
-    }ifelse(selec<=1020);{
-        T+=1
-        let porcenT=((T/T)*100)
-        document.write(`El porcentaje total de Turismo es de: ${porcenT}`)
-    }if(selec<=2000){
-        CA+=1
-        let porcenCA=((CA/CA)*100)
-        document.write(`El porcentaje total de carros es de: ${porcenCA}`)
-    }ifelse(selec<=15000);{
-    let porcenA=((A/A)*100)
-    document.write(`El porcentaje total de Autobuses es de: ${porcenA}`)
-    }if(selec<=25000){
-        C+=1
-        let porcenC=((C/C)*100)
-        document.write(`El porcentaje total de camiones es de: ${porcenC}`)
+    let color=Number(prompt("Ingrese el ultimo numero de su placa que sea del  1 al 9 "))
+    if(color<=2){
+        A+=1
+        document.write(`El total de vehiculos con placa amarilla es de: ${A}<br>`)
+    }if(color<=4){
+        ros+=1
+        document.write(`El total de vehiculos con placa rosada es de: ${ros}<br>`)
+    }if(color<=6){
+        roj+=1
+        document.write(`El total del vehiculos de placa roja es de: ${roj}<br>`)
+    }ifelse(color<8);{
+        verd+=1
+        document.write(`El total de vehiculos de placa verde es de: ${verd}<br>`)
+    }if(color==9 && color==0){
+        az+=1
+        document.write(`El total de vehiculos con placa azul es de: ${az}<br>`)
     }
 
-    }
+}
 })
 
 
